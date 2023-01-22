@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css" type="text/css" />
+</head>
+
+<body>
+    <div class="root">
+        <div class="loader-container">
+            <div class='spinner trans-spinner'></div>
+            <h4>Transaction in progress...</h4>
+        </div>
+        <header>
+            <div class="content-header">
+                <h2>Web3 Wallet connection</h2>
+                <button class="btn-connect">Connect Wallet</button>
+            </div>
+        </header>
+        <content class="content-body">
+            <p class="account-info"></p>
+            <p class="contract-balance"></p>
+            <button class="btn-balance">Balance</button>
+            <div class="actions-box">
+                <div class="">
+                    <button class="btn-fund">Fund</button>
+                    <label for="eth_amount" class="eth_amount-label">Fund amount</label>
+                    <input id="eth_amount" type="number" placeholder="0.1" />
+                </div>
+                <button class="btn-withdraw">Withdraw</button>
+            </div>
+        </content>
+    </div>
+</body>
+<script type="module" src="index.js"></script>
+
+</html>

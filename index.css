@@ -1,0 +1,200 @@
+:root {
+    font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    font-weight: 400;
+
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+a {
+    font-weight: 500;
+    color: #646cff;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: #535bf2;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    min-width: 320px;
+    min-height: 100vh;
+}
+
+header {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100vw;
+}
+
+.content-header {
+    display: flex;
+    align-items: center;
+    padding: 2rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    box-shadow: 0 2px 5px -3px black;
+    background: #242424;
+}
+
+h1 {
+    font-size: 3.2em;
+    line-height: 1.1;
+}
+
+.content-body {
+    margin: auto 0;
+    display: none;
+}
+
+button {
+    border-radius: 8px;
+    border: 1px solid transparent;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+    font-weight: 500;
+    font-family: inherit;
+    background-color: #1a1a1a;
+    cursor: pointer;
+    transition: border-color 0.25s;
+}
+
+button:hover {
+    border-color: #646cff;
+}
+
+button:focus,
+button:focus-visible {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+@media (prefers-color-scheme: light) {
+    :root {
+        color: #213547;
+        background-color: #ffffff;
+    }
+
+    a:hover {
+        color: #747bff;
+    }
+
+    button {
+        background-color: #f9f9f9;
+    }
+}
+
+
+.root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+    padding-top: 9rem;
+}
+
+.glowing-text {
+    will-change: filter;
+}
+
+.glowing-text:hover {
+    filter: drop-shadow(0 0 1em #61dafbaa);
+}
+
+.card {
+    padding: 2em;
+}
+
+.btn-balance {
+    width: 100%;
+}
+
+.actions-box {
+    margin-top: 3rem;
+}
+
+.btn-fund {
+    margin-right: 3rem;
+    width: 7rem;
+}
+
+.btn-withdraw {
+    margin-top: 2rem;
+    width: 100%;
+}
+
+.eth_amount-label {
+    position: absolute;
+    transform: translate(0, -15px);
+}
+
+.read-the-docs {
+    color: #888;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    border: 1px solid #535bf2;
+    border-radius: 0.5rem;
+    padding: 2rem;
+    margin-top: 10vh;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.form-group input {
+    font-size: 1rem;
+    padding: 0.5rem;
+}
+
+
+.loader-container {
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    background: rgba(0, 0, 0, 0.834);
+    z-index: 1;
+    display: none;
+}
+
+.spinner {
+    width: 64px;
+    height: 64px;
+    border: 8px solid;
+    transition: border-color 0.2s ease;
+    border-color: #3d5af1 transparent #3d5af1 transparent;
+    border-radius: 50%;
+    animation: spin-anim 1.2s linear infinite;
+}
+
+.spinner.trans-spinner {
+    border-color: #3df13d transparent #3df13d transparent;
+}
+
+@keyframes spin-anim {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
